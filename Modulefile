@@ -1,0 +1,7 @@
+name    'openresty'
+version '0.1'
+author 'Steven MARTINS'
+license 'The MIT License (MIT)'
+summary 'Nginx openresty'
+description 'A puppet module to handle openresty configuration and installation'
+project_page ''

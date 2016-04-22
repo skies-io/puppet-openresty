@@ -1,0 +1,5 @@
+server {
+   listen <%= listen_port %>;
+   server_name <%= server_name %>;
+   rewrite ^ <%= to_addr %>$request_uri permanent;
+}
