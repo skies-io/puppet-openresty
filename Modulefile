@@ -1,5 +1,5 @@
-name    'openresty'
-version '0.1'
+name    'smartins/openresty'
+version '0.1.0'
 author 'Steven MARTINS'
 license 'The MIT License (MIT)'
 summary 'Nginx openresty'
