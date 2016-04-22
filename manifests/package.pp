@@ -24,11 +24,5 @@ class openresty::package inherits openresty::params {
       Package['perl'],
     ],
   }
-  exec { 'openresty::package::install_luasocket':
-    cwd     => '/tmp',
-    command => "wget ${openresty::params::luasocket_url} -O luasocket.tar.gz; tar zxf luasocket.tar.gz ; cd luasocket*; LUAINC=-I/usr/local/openresty/luajit/include/luajit-2.0/ make ; make install",
-    unless  => 'test -d /usr/local/share/lua/5.1/socket',
-    require => Exec['openresty::package::install_openresty'],
-  }
 
 }
